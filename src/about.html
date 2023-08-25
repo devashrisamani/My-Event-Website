@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>About the Craft Market</title>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+      <!-- Linking the CSS External File -->
+      <link rel="stylesheet" href="css/general_styles.css">
+      <link rel = "stylesheet" href="css/about_styles.css">
+   </head>
+   <body>
+
+   <div class="grid-container">
+      <div class="brand">Craft Market</div>
+         <div class="page-links">
+            <a href="index.html"><button class="menu-button">Home</button></a>
+            <a href="gallery.html"><button class="menu-button">Gallery</button></a>
+            <a href="about.html"><button class="menu-button">About</button></a>
+         </div> <!-- closes the page-links div -->
+         <div class="main">
+            <h1>About the Craft Market!</h1>
+         </div> <!-- closes the main div -->
+      </div> <!-- closes the grid-container div -->
+
+      <div class ="about-container">
+         <div id = "about-item-1">
+            <figure class ="section-icon">
+               <img src="images/icons8-sun-200.png" alt="Weather icon with sun and clouds.">
+            </figure>
+            <h4>Current Weather</h4>
+            <p>Temperature</p>
+            <p id ="current_temperature"></p>
+            <p>Wind Speed</p>
+            <p id ="current_windspeed"></p>
+         </div>
+         <div id = "about-item-2">
+            <h3> Organised by Family, Friends and Community! </h3>
+            <p> The Bayside Heights Residences Craft Market Event is more than a gathering 
+               of artists and craft enthusiasts; it is a manifestation of love, respect, 
+               and empowerment organized by those closest to the residents of Bayside Heights 
+               Residences - their family, friends, and community members.</p>
+            <h3>Who We Are</h3>
+            <p>We are a passionate not-for-profit group of volunteers united by a shared belief
+               in the importance of recognizing and nurturing the independence, creativity, 
+               and valuable contributions of our seniors. Comprised of family members, friends,
+               and fellow community members, our team understands the essence of the Bayside 
+               Heights community and is dedicated to creating platforms where our older 
+               citizens can shine.</p>
+            <h3>Our Mission</h3>
+            <p>Our mission extends beyond organizing a craft market. We aim to celebrate 
+               the wisdom, skills, and artistry of the seniors at Bayside Heights Residences
+               and local artists, presenting them not as beneficiaries, but as the very heart
+               and soul of our community.</p>
+         </div>
+         <div id = "about-item-3">
+            <form id="subscribe-form">
+               <h5> Subscribe to our Newsletter!</h5>
+               <label for="firstname">First Name:</label>
+               <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required> 
+
+               <label for="suburb">Suburb:</label>
+               <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required> 
+
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="Enter your email address" required> 
+
+               <input type="submit" value="Subscribe" id="subscribe-submit-button" disabled>
+            </form>
+
+            <div id="responseMessage"></div>
+         </div>
+
+         <div id = "about-item-4">
+            
+         </div>
+
+      </div>
+      <script src="js/about_api.js"></script>
+   </body>
+</html>
